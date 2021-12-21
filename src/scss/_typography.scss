@@ -1,49 +1,67 @@
-/* lora-700 - latin */
-@font-face {
-  font-family: 'Lora';
+/* AkkuratPro-700 - latin */
+
+
+/* @font-face {
+  font-family: 'AkkuratPro';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Lora Bold'), local('Lora-Bold'),
-    url('/fonts/lora-v13-latin-700.woff') format('woff');
+  src: local('AkkuratPro Bold'), local('AkkuratPro-Bold'),
+    url('/fonts/AkkuratPro-v13-latin-700.woff') format('woff');
+} */
+
+@font-face {
+    font-family: AkkuratPro;
+    font-display: swap;
+    src: url('/fonts/lineto-akkurat-pro-regular.woff2')format("woff2"), url('/fonts/lineto-akkurat-pro-regular.woff')format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AkkuratPro;
+    font-display: swap;
+    src: url('/fonts/lineto-akkurat-pro-bold.woff2')format("woff2"), url('/fonts/lineto-akkurat-pro-bold.woff')format("woff");
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
-  // Strip the unit off the size ratio to generate a line height
-  $line-height: get-size(600);
-  line-height: $line-height / ($line-height * 0 + 1);
-
-  @include apply-utility('font', 'base');
+    // Strip the unit off the size ratio to generate a line height
+    $line-height: get-size(600);
+    line-height: $line-height / ($line-height * 0 + 1);
+    font-family: "AkkuratPro", sans-serif !important;
+    @include apply-utility('font',
+    'base');
 }
 
 h1,
 h2,
 h3 {
-  @include apply-utility('font', 'serif');
+    @include apply-utility('font',
+    'serif');
 }
 
 h1 {
-  font-size: get-size(700);
+    font-size: get-size(700);
 }
 
 h2 {
-  font-size: get-size(600);
+    font-size: get-size(600);
 }
 
 h3 {
-  font-size: get-size(500);
+    font-size: get-size(500);
 }
 
 @include media-query('md') {
-  h1 {
-    font-size: get-size(900);
-  }
-
-  h2 {
-    font-size: get-size(800);
-  }
-
-  h3 {
-    font-size: get-size(700);
-  }
+    h1 {
+        font-size: get-size(900);
+    }
+    h2 {
+        font-size: get-size(800);
+    }
+    h3 {
+        font-size: get-size(700);
+    }
 }
