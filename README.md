@@ -1,16 +1,16 @@
 # A simple starter kit for Eleventy
 
-Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend it for yourself.
+meter is a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend it for yourself.
 
-Get started now by **[deploying Hylia to Netlify.][deploy-to-netlify]**
+Get started now by **[deploying meter to Netlify.][deploy-to-netlify]**
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy-to-netlify]
 
-<img src="https://hankchizljaw.imgix.net/hylia-github.jpg?auto=format&q=60" width="550" />
+<img src="https://hankchizljaw.imgix.net/meter-github.jpg?auto=format&q=60" width="550" />
 
 ## Features
 
-Hylia version 0.7.0 features:
+meter version 0.7.0 features:
 
 ✍️ A pre-configured [Netlify CMS](https://www.netlifycms.org/) setup  
 🎨 Customisable design tokens to make it your own  
@@ -26,7 +26,7 @@ Hylia version 0.7.0 features:
 ## Roadmap
 
 💬 [Netlify Forms](https://www.netlify.com/docs/form-handling/) powered comments  
-💡 ~~Dark/Light mode toggle~~ [Added in 0.4.0](https://github.com/hankchizljaw/hylia/releases/tag/0.4.0)  
+💡 ~~Dark/Light mode toggle~~ [Added in 0.4.0](https://github.com/hankchizljaw/meter/releases/tag/0.4.0)  
 🗣 Webmentions  
 📖 Pagination  
 🐦 Web sharing API integration  
@@ -42,15 +42,15 @@ Hylia version 0.7.0 features:
 
 ### Method one: One-Click Deploy to Netlify
 
-You can [deploy Hylia to Netlify with one click][deploy-to-netlify] and you’ll be up and running in minutes!
+You can [deploy meter to Netlify with one click][deploy-to-netlify] and you’ll be up and running in minutes!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy-to-netlify]
 
-I recorded a quick start video of me deploying Hylia to Netlify and getting the CMS set up. [Check it out here](https://youtu.be/0hM_0BH-Y_A).
+I recorded a quick start video of me deploying meter to Netlify and getting the CMS set up. [Check it out here](https://youtu.be/0hM_0BH-Y_A).
 
 ### Method two: Clone / Fork
 
-1. Clone or fork this repo: `git clone https://github.com/hankchizljaw/hylia`
+1. Clone or fork this repo: `git clone https://github.com/hankchizljaw/meter`
 2. `cd` into the project directory and run `npm install`
 3. Once all the dependencies are installed run `npm start`
 4. Open your browser at `http://localhost:8080` and away you go!
@@ -100,7 +100,7 @@ In short, though:
 
 ### Design Tokens
 
-Although Hylia has a pretty simple design, you can configure the core design tokens that control the colours, size ratio and fonts.
+Although meter has a pretty simple design, you can configure the core design tokens that control the colours, size ratio and fonts.
 
 ---
 
@@ -110,25 +110,25 @@ Although Hylia has a pretty simple design, you can configure the core design tok
 
 To change the design tokens in the CMS, find the “Globals” in the sidebar then in the presented options, select “Theme Settings”.
 
-To change the design tokens directly, edit [`_src/data/tokens.json`](https://github.com/hankchizljaw/hylia/blob/master/src/_data/tokens.json).
+To change the design tokens directly, edit [`_src/data/tokens.json`](https://github.com/hankchizljaw/meter/blob/master/src/_data/tokens.json).
 
 The tokens are converted into maps that the Sass uses to compile the front-end CSS, so make sure that you maintain the correct structure of `tokens.json`.
 
 ### Styleguide
 
-Your version of Hylia ships with a Styleguide by default. You can see a demo of the Styleguide at <https://hylia.website/styleguide/>.
+Your version of meter ships with a Styleguide by default. You can see a demo of the Styleguide at <https://meter.website/styleguide/>.
 
-You can edit the Styleguide by opening [`src/styleguide.njk`](https://github.com/hankchizljaw/hylia/blob/master/src/styleguide.njk). If you don’t want the Styleguide, delete that file and the page will vanish.
+You can edit the Styleguide by opening [`src/styleguide.njk`](https://github.com/hankchizljaw/meter/blob/master/src/styleguide.njk). If you don’t want the Styleguide, delete that file and the page will vanish.
 
 ## Sass
 
-Hylia is based on the [WIP v2 version of Stalfos](https://github.com/hankchizljaw/stalfos/tree/feature/v2), which currently has no documentation (I know, I’m bad). Here is some very basic documentation for elements of the new framework that you will encounter on this project.
+meter is based on the [WIP v2 version of Stalfos](https://github.com/hankchizljaw/stalfos/tree/feature/v2), which currently has no documentation (I know, I’m bad). Here is some very basic documentation for elements of the new framework that you will encounter on this project.
 
 ### Configuration
 
-The whole Sass system is powered by central config file, which lives here: [`_src/scss/_config.scss`](https://github.com/hankchizljaw/hylia/blob/master/src/scss/_config.scss).
+The whole Sass system is powered by central config file, which lives here: [`_src/scss/_config.scss`](https://github.com/hankchizljaw/meter/blob/master/src/scss/_config.scss).
 
-Before Sass is compiled, a `_tokens.scss` file is generated from the [design tokens config](https://github.com/hankchizljaw/hylia/blob/master/src/_data/tokens.json) which is required.
+Before Sass is compiled, a `_tokens.scss` file is generated from the [design tokens config](https://github.com/hankchizljaw/meter/blob/master/src/_data/tokens.json) which is required.
 
 Key elements:
 
@@ -182,7 +182,7 @@ Pass in the key of one of your breakpoints set in `$stalfos-config['breakpoints'
 
 ## CMS
 
-Hylia has [Netlify CMS](https://www.netlifycms.org/) pre-configured as standard. You can customise the configuration by editing [`src/admin/config.yml`](https://github.com/hankchizljaw/hylia/blob/master/src/admin/config.yml).
+meter has [Netlify CMS](https://www.netlifycms.org/) pre-configured as standard. You can customise the configuration by editing [`src/admin/config.yml`](https://github.com/hankchizljaw/meter/blob/master/src/admin/config.yml).
 
 ### Content that you can edit
 
@@ -197,7 +197,7 @@ The basic CMS setup allows you to edit the following:
 
 ## Get involved
 
-This project is _super_ early and feedback is very much welcome. In order to keep things running smooth, please consult the [contribution guide and code of conduct](https://github.com/hankchizljaw/hylia/blob/master/contributing.md).
+This project is _super_ early and feedback is very much welcome. In order to keep things running smooth, please consult the [contribution guide and code of conduct](https://github.com/hankchizljaw/meter/blob/master/contributing.md).
 
 The stuff that I need the most help with is:
 
@@ -205,4 +205,4 @@ The stuff that I need the most help with is:
 - [Webmentions](https://www.w3.org/TR/webmention/)
 - Performance
 
-[deploy-to-netlify]: https://app.netlify.com/start/deploy?repository=https://github.com/hankchizljaw/hylia&stack=cms
+[deploy-to-netlify]: https://app.netlify.com/start/deploy?repository=https://github.com/hankchizljaw/meter&stack=cms
