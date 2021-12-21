@@ -1,0 +1,74 @@
+---
+label: Meter List
+hide_body: true
+fields:
+- name: columns
+  type: number
+  label: Columns
+  description: ''
+  default: 3
+  required: true
+  config:
+    min: 3
+    max: 9
+    step: 1
+    required: true
+- name: meter_list
+  type: field_group_list
+  fields:
+  - name: tab_order
+    type: number
+    label: Tab-order
+    description: ''
+    default: 1
+    required: true
+    config:
+      min: 1
+      max: 5
+      step: 1
+  - name: headline
+    type: text
+    config:
+      required: true
+    label: Headline
+  - name: image
+    type: file
+    config:
+      maxSize: 1
+    label: Image
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: intro
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Intro
+  - name: facts
+    type: field_group_list
+    fields:
+    - name: content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: markdown
+      label: Content
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Facts
+  config:
+    min: 2
+    max: 9
+    labelField: 
+  label: Meter List

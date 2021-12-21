@@ -1,0 +1,45 @@
+---
+label: Homepage
+hide_body: false
+fields:
+- name: layout
+  type: select
+  default: homepage
+  config:
+    required: false
+    options:
+    - homepage
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Home
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: page_sections
+  type: blocks
+  label: Page Sections
+  template_types:
+  - meter_teaser
+  - meter-header
+  - meter_header
+  - meter_text
+  - meter_list
+  - score_video_external
+  config:
+    min: 
+    max: 

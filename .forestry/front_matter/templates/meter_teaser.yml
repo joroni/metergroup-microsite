@@ -1,0 +1,96 @@
+---
+label: Meter Teaser
+hide_body: true
+fields:
+- name: meter_teaser
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - CJ
+      - CI
+      - CH
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+    description: 'Layout types:<br><strong>CJ</strong> - fullwidth, text overlay<br><strong>CI</strong>
+      - left image, right text<br><strong>CH</strong> - right image, left text '
+  - name: mini_header
+    type: text
+    config:
+      required: false
+    label: Mini-header
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: heroImage
+    type: file
+    config:
+      maxSize: 1
+    label: Banner Image
+    description: Horizontal large image
+    showOnly:
+      field: type
+      value: CJ
+  - name: heroImageMobile
+    type: file
+    config:
+      maxSize: 1
+    label: Banner Image (mobile)
+    description: Banner Image for mobile (Square 1:1 ratio) Ex. 675px X 675px
+    showOnly:
+      value: CJ
+  - name: call_to_action
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: true
+      label: Title
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: background_color
+      type: select
+      default: []
+      config:
+        required: false
+        options:
+        - Fo
+        - Fl
+        - Fm
+        - Fv
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Background color
+      description: "<strong>Legend</strong>:<br><strong>Fm</strong> - Food<br><strong>Fo</strong>
+        - Environment<br><strong>Fl</strong> - Horticulture<br><strong>Fv</strong>
+        - METER Group"
+    label: Call to Action
+  label: Meter Teaser

@@ -1,0 +1,31 @@
+---
+label: MeterCalculator
+hide_body: true
+fields:
+- name: meter_calculator
+  type: field_group
+  config: {}
+  fields:
+  - name: layout
+    type: select
+    default: page
+    config:
+      required: false
+      options:
+      - page
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Layout
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Title
+  label: MeterCalculator

@@ -1,0 +1,30 @@
+---
+label: Score Video External
+hide_body: true
+fields:
+- name: score_video_external
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: id
+    type: text
+    config:
+      required: true
+    label: ID
+  - name: poster
+    type: text
+    config:
+      required: false
+    label: Poster
+  - name: preview
+    type: text
+    config:
+      required: false
+    label: Preview
+    hidden: true
+  label: Score Video External

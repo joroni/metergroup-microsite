@@ -1,0 +1,80 @@
+---
+label: Menu
+hide_body: true
+fields:
+- name: menu_item
+  type: field_group_list
+  fields:
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Title
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: order
+    type: number
+    label: Order
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: menu_items
+    type: field_group_list
+    fields:
+    - name: title
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html
+      label: Title
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: menu_child_items
+      type: field_group_list
+      fields:
+      - name: title
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html
+        label: Title
+      - name: url
+        type: text
+        config:
+          required: false
+        label: URL
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Menu Child Items
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Menu items
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Menu-Item

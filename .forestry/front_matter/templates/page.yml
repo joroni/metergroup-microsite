@@ -1,0 +1,130 @@
+---
+label: Page
+hide_body: false
+fields:
+- name: layout
+  type: select
+  default: page
+  config:
+    required: false
+    options:
+    - page
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: eleventyNavigation
+  type: field_group
+  config: {}
+  fields:
+  - name: key
+    type: text
+    config:
+      required: true
+    label: Key
+    description: Value must be unique
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: Human readable text Ex."About Me"
+  - name: brandname
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - Food
+      - Environment
+      - Horticulture
+      - Group
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Brand Name
+  - name: type
+    type: select
+    default: ''
+    config:
+      required: false
+      options:
+      - topics
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+    default: "{{ permalink }}"
+    description: Ex. <strong>/en/meter-environment/topics/plant-breeding/</strong>
+    hidden: true
+  - name: slug
+    type: text
+    config:
+      required: true
+    label: Slug
+    description: Must include trailing slashes. Ex. /meter-horticulture/
+  - name: parent
+    type: text
+    config:
+      required: false
+    label: Parent
+    description: 'Parent navigation <strong>key </strong>(the unique value defined
+      on each content).<br>Example key trail: <strong>about</strong> &gt; mission-vision.
+      <br>If the current page is Mission Vision, the parent key is <strong>about</strong>'
+  - name: order
+    type: number
+    label: Order
+    description: ''
+    default: 1
+    required: true
+    config:
+      min: 
+      max: 
+      step: 1
+  label: Navigation
+- name: page_sections
+  type: blocks
+  label: Page Sections
+  template_types:
+  - meter_teaser_0
+  - meter-header
+  - highlights
+  - headerhero
+  - meter_header
+  - meter_calculator
+  - meter_text
+  - meter_list
+  - score_video_external
+  config:
+    min: 
+    max: 
+pages:
+- src/pages/application.md
+- src/pages/contact-us.md
+- src/pages/quality-assurance.md
+- src/pages/soil-science.md

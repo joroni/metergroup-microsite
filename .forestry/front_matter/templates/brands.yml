@@ -1,0 +1,17 @@
+---
+label: Brands
+hide_body: true
+fields:
+- type: field_group_list
+  name: brands
+  label: brands
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: legend
+    label: legend
+  - type: number
+    name: weight
+    label: weight

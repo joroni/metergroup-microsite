@@ -1,0 +1,29 @@
+---
+label: Meter Button Arrow
+hide_body: true
+fields:
+- name: button_arrow_label
+  type: text
+  config:
+    required: false
+  label: Label
+- name: button_arrow_url
+  type: text
+  config:
+    required: false
+  label: URL
+- name: target
+  type: select
+  default: _self
+  config:
+    required: false
+    options:
+    - _blank
+    - _self
+    - _parent
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Target

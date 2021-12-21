@@ -1,0 +1,59 @@
+---
+label: Menu Block
+hide_body: true
+fields:
+- type: field_group_list
+  name: items
+  label: items
+  fields:
+  - type: text
+    name: text
+    label: text
+  - type: text
+    name: url
+    label: url
+  - type: boolean
+    name: external
+    label: external
+  - type: text
+    name: footer_block
+    label: footer_block
+  - type: field_group_list
+    name: subitems
+    label: subitems
+    fields:
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
+    - type: boolean
+      name: external
+      label: external
+    - type: field_group_list
+      name: childItems
+      label: childItems
+      fields:
+      - type: text
+        name: text
+        label: text
+      - type: text
+        name: url
+        label: url
+      - type: boolean
+        name: external
+        label: external
+      - type: field_group_list
+        name: subChildItems
+        label: subChildItems
+        fields:
+        - type: textarea
+          name: text
+          label: text
+        - type: text
+          name: url
+          label: url
+        - type: boolean
+          name: external
+          label: external

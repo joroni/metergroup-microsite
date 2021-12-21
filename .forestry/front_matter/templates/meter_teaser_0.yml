@@ -1,0 +1,55 @@
+---
+label: Meter Teaser 0
+hide_body: true
+fields:
+- name: meter_teaser_0
+  type: field_group
+  config: {}
+  fields:
+  - name: mini_header
+    type: text
+    config:
+      required: false
+    label: Mini Header
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: heroImage
+    type: file
+    config:
+      maxSize: 0.5
+    label: Banner Image
+    description: Horizontal large image
+  - name: heroImageMobile
+    type: file
+    config:
+      maxSize: 0.2
+    label: Banner Image (mobile)
+    description: Banner Image for mobile
+  - name: call_to_action
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    label: Call to Action
+  label: Meter Teaser 0

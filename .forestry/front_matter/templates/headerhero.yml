@@ -1,0 +1,29 @@
+---
+label: HeaderHero
+hide_body: true
+fields:
+- name: headerhero
+  type: field_group
+  config: {}
+  fields:
+  - name: branding
+    type: text
+    config:
+      required: false
+    label: Branding
+    hidden: false
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Title
+  - name: heroImage
+    type: file
+    config:
+      maxSize: 0.5
+    label: HeroImage
+  label: HeaderHero

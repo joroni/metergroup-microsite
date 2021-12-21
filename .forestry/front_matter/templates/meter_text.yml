@@ -1,0 +1,37 @@
+---
+label: Meter Text
+hide_body: true
+fields:
+- name: meter_text
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: select
+    default: normal
+    config:
+      required: true
+      options:
+      - normal
+      - centerx
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: sub_title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Sub-Title
+  label: Meter Text
