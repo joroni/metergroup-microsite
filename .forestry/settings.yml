@@ -1,16 +1,42 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: admin
 webhook_url: 
-sections: 
-upload_dir: uploads
-public_path: "/uploads"
+sections:
+- type: directory
+  path: src
+  label: Homepage
+  create: none
+  match: index.md
+  templates:
+  - homepage
+- type: directory
+  path: src/pages
+  label: Pages
+  create: all
+  match: "**/*.md"
+  templates:
+  - page
+- type: directory
+  path: src/data
+  label: Footer Menu
+  create: none
+  match: menu.json
+  new_doc_ext: app
+  templates:
+  - menu-block
+upload_dir: src/images/uploads
+public_path: "/images/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
+  preview_env:
+  - NODE_ENV=development
+  - ELEVENTY_ENV=start
+  preview_output_directory: dist
+  install_dependencies_command:  npm install
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
