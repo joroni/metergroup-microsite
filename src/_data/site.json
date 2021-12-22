@@ -1,7 +1,7 @@
 {
     "showThemeCredit": true,
     "name": "METERGroup Starter Kit ",
-    "shortDesc": "meter is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
+    "shortDesc": "METERGroup is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
     "url": "https://meter.website",
     "authorEmail": "hi@piccalil.li",
     "authorHandle": "@piccalilli_",
@@ -9,5 +9,5 @@
     "enableThirdPartyComments": false,
     "maxPostsPerPage": 5,
     "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
-    "faviconPath": "/images/favicon.png"
+    "faviconPath": "/images/favicon/ms-icon-310x310.png"
 }
