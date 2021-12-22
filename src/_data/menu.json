@@ -1,0 +1,117 @@
+{
+  "items": [
+    {
+      "text": "Footer Nav",
+      "url": "",
+      "external": false,
+      "footer_block": "footer-nav",
+      "subitems": [
+        {
+          "text": "Contact",
+          "url": "#",
+          "external": false,
+          "childItems": [
+            {
+              "text": "USA",
+              "url": "/meter-food/applications/",
+              "external": false,
+              "subChildItems": [
+                {
+                  "text": "<p>2365 NE Hopkins Ct.&nbsp;<br> Pullman, WA 99163&nbsp;<br> P +1.509.332.2756<br> info@metergroup.com</p>",
+                  "url": "",
+                  "external": false
+                }
+              ]
+            },
+            {
+              "text": "USA",
+              "url": "/meter-food/applications/",
+              "external": false,
+              "subChildItems": [
+                {
+                  "text": "<p>2365 NE Hopkins Ct.&nbsp;<br> Pullman, WA 99163&nbsp;<br> P +1.509.332.2756<br> info@metergroup.com</p>",
+                  "url": "",
+                  "external": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "FOOD",
+          "url": "#",
+          "external": "false",
+          "childItems": [
+            {
+              "text": "Products",
+              "url": "#",
+              "external": "",
+              "subChildItems": [
+                {
+                  "text": "Water activity meter",
+                  "url": "#",
+                  "external": ""
+                },
+                {
+                  "text": "Water activity meter",
+                  "url": "#",
+                  "external": ""
+                },
+                {
+                  "text": "Water activity meter",
+                  "url": "#",
+                  "external": ""
+                }
+              ]
+            },
+            {
+              "text": "Products",
+              "url": "#",
+              "external": "",
+              "subChildItems": [
+                {
+                  "text": "Water activity meter",
+                  "url": "#",
+                  "external": ""
+                },
+                {
+                  "text": "Water activity meter",
+                  "url": "#",
+                  "external": ""
+                },
+                {
+                  "text": "Water activity meter",
+                  "url": "#",
+                  "external": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Footer Bottom",
+      "url": "",
+      "external": false,
+      "footer_block": "footer-bottom",
+      "subitems": [
+        {
+          "text": "Test",
+          "url": "#",
+          "external": false
+        },
+        {
+          "text": "Test",
+          "url": "#",
+          "external": false
+        },
+        {
+          "text": "Test",
+          "url": "#",
+          "external": false
+        }
+      ]
+    }
+  ]
+}
