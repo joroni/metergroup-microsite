@@ -1,17 +1,86 @@
 {
     "items": [{
-            "text": "Home",
+            "text": "Food",
             "url": "/",
-            "external": false
+            "external": false,
+            "childItems": [{
+                "text": "Applications",
+                "url": "/meter-food/applications/",
+                "external": false,
+                "subChildItems": [{
+                        "text": "QA & QM",
+                        "url": "/meter-food/topics/quality-assurance-food/",
+                        "external": false
+                    },
+                    {
+                        "text": "Link 12",
+                        "url": "/#",
+                        "external": ""
+                    },
+                    {
+                        "text": "Link 14",
+                        "url": "#",
+                        "external": ""
+                    }
+                ]
+            }]
         },
         {
-            "text": "GitHub",
-            "url": "https://github.com/andy-piccalilli/meter",
-            "external": true
+            "text": "Environment",
+            "url": "/portfolio/",
+            "external": "",
+            "childItems": [{
+                    "text": "Application",
+                    "url": "#",
+                    "external": "",
+                    "subChildItems": [{
+                            "text": "Soil Science",
+                            "url": "/soil-science/",
+                            "external": ""
+                        },
+                        {
+                            "text": "Env 42",
+                            "url": "#",
+                            "external": ""
+                        },
+                        {
+                            "text": "Env 41",
+                            "url": "#",
+                            "external": ""
+                        }
+                    ]
+                },
+                {
+                    "text": "Env 3",
+                    "url": "#",
+                    "external": "",
+                    "subChildItems": [{
+                            "text": "Env 31",
+                            "url": "#",
+                            "external": ""
+                        },
+                        {
+                            "text": "Env 32",
+                            "url": "#",
+                            "external": ""
+                        },
+                        {
+                            "text": "Env 33",
+                            "url": "#",
+                            "external": ""
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "text": "Example Contact Page",
-            "url": "/contact",
+            "text": "Horticulture",
+            "url": "#",
+            "external": ""
+        },
+        {
+            "text": "Company",
+            "url": "/contact-us/",
             "external": false
         }
     ]
