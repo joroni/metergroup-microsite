@@ -21,7 +21,7 @@ fields:
     required: false
   label: Title
   default: Home
-- name: description
+- name: metaDesc
   type: textarea
   default: ''
   config:
