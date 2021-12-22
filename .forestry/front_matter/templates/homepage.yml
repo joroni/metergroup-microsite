@@ -8,7 +8,7 @@ fields:
   config:
     required: false
     options:
-    - homepage
+    - home
     source:
       type: simple
       section: 

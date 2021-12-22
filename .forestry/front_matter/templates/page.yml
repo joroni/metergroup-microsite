@@ -123,8 +123,3 @@ fields:
   config:
     min: 
     max: 
-pages:
-- src/pages/application.md
-- src/pages/contact-us.md
-- src/pages/quality-assurance.md
-- src/pages/soil-science.md
