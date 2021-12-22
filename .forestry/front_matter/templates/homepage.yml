@@ -4,9 +4,9 @@ hide_body: false
 fields:
 - name: layout
   type: select
-  default: homepage
+  default: home
   config:
-    required: false
+    required: true
     options:
     - home
     source:
