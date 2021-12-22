@@ -1,55 +1,55 @@
 @import 'config';
-
+@import 'variables';
 // Pull in the stalfos lib
 @import '../../node_modules/stalfos/stalfos.scss';
-
 // Local mixins
 @import 'mixins/dark-mode';
-
 @import 'theme';
-
+@import 'ui';
 // Local dependencies
 @import 'typography';
 
 /**
  * GLOBAL STYLES
  */
+
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
-  &:focus {
-    outline: none;
-  }
+    flex: 1 0 auto;
+    &:focus {
+        outline: none;
+    }
 }
 
 hr {
-  display: block;
-  height: 1px;
-  max-width: 500px;
-  background: var(--color-stroke);
-  border: none;
-  margin: get-size(900) auto;
+    display: block;
+    height: 1px;
+    max-width: 500px;
+    background: var(--color-stroke);
+    border: none;
+    margin: get-size(900) auto;
 }
 
 // For when metric attributes are added to img elements
 img {
-  height: auto;
+    height: auto;
 }
 
 :focus {
-  outline: 1px solid var(--color-theme-primary-glare);
-  outline-offset: 0.25rem;
+    outline: 1px solid var(--color-theme-primary-glare);
+    outline-offset: 0.25rem;
 }
+
 
 /**
  * PROJECT IMPORTS
@@ -59,7 +59,6 @@ img {
 @import 'utilities/inner-wrapper';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
-
 // Components
 @import 'components/button';
 @import 'components/form';

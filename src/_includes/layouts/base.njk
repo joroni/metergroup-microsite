@@ -13,12 +13,46 @@
   {% endblock %}
 </head>
 <body>
-  {% include "partials/global/site-head.njk" %}
+   <score-app style="position: relative; overflow-y: auto;">
+        <!---->
+        <score-storage role="presentation"></score-storage>
+        <score-tracker tracker="" role="presentation"></score-tracker>
+        <score-pointer aria-hidden="true" role="presentation" style="transform: translate(-1000px, -1000px)" class="IB">
+            <!---->
+            <div class="Ho">
+                <div class="Hp">
+                    <div></div>
+                </div>
+            </div>
+            <!---->
+        </score-pointer>
+        <score-scrollbar aria-hidden="true" role="presentation" style="display: none">
+            <!---->
+            <div class="scroll-container">
+                <div class="scroll-face" style="top: 0px; height: 106.4px"></div>
+                <div class="scroll-track"></div>
+                <div class="scroll-button">
+                    <div class="Hp">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </score-scrollbar>
+           <meter-nav-header class="Iv" end="1" iv="51" ln="500" lz="1024" role="presentation" start="0" style="transform: translateY(0px)" tabindex="-1">
+        {% include "partials/global/meter-head.njk" %}
+        </meter-nav-header>
+             <score-stage role="presentation">
+          <meter-view class="in Aa GX" role="presentation">
+                <main class="GX" tabindex="-1">
   {% block content %}
   {% endblock content %}
-  {% include "partials/global/site-foot.njk" %}
+      </main>
+        </meter-view></score-stage>
+  {% include "partials/global/meter-foot.njk" %}
   {% block foot %}
   {% endblock %}
+  </score-app>
   <script type="module" src="/js/components/theme-toggle.js" async defer></script>
   <script>
     if ('serviceWorker' in navigator) {
