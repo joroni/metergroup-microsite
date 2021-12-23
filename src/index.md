@@ -11,7 +11,7 @@ page_sections:
   meter_teaser:
     branding: Group
     title: Simply precise
-    heroImage: "/images/uploads/meter_stage_homepage.jpg"
+    heroImage: "/images/uploads/meter-group-home-of-meter.jpg"
     heroImageMobile: "/images/uploads/meter_stage_homepage_mobile.jpg"
     description: 'METER delivers revolutionary products and services. We do this by
       connecting science, engineering and design to deliver precisely what our customers
