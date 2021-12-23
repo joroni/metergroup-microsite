@@ -19,7 +19,7 @@ sections:
   templates:
   - page
 - type: directory
-  path: src/data
+  path: src/_data
   label: Footer Menu
   create: none
   match: menu.json
