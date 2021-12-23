@@ -11,7 +11,17 @@
         {{ content | safe }}
       </div>
     </article>
+
+
+    {% for page_section in page_sections %}
+    {% if page_section.template == page_section.template %}
+      {% include "partials/components/"+page_section.template+".njk" %} 
+    {% endif %} 
+  {% endfor %}
+  
   </main>
+
+
 {% endblock %}
 
 {{ content | safe }}

@@ -1,0 +1,77 @@
+<section class="col-1 {{ page_section.template }}">
+    {% if eleventyNavigation.title %}
+        <h1>{{ eleventyNavigation.title }}</h1>
+    {% endif %}
+    <meter-teaser class="{{ page_section.meter_teaser.type }}" role="presentation">
+
+        {#  <pre>
+                {{ page_section.headerhero | dump }}
+                </pre>
+                 #}
+        {% if page_section.meter_teaser.title %}
+            <div class="content  {% if page_section.meter_teaser.type == 'CJ' %}main{% endif %}">
+                <span class="smallcaps">{{ page_section.meter_teaser.mini_header }}</span>
+                <h1>{{ page_section.meter_teaser.title }}</h1>
+                {% if page_section.meter_teaser.description %}
+                    <div>{{ page_section.meter_teaser.description }}</div>
+                {% endif %}
+                {% if page_section.meter_teaser.call_to_action.title %}
+                    <meter-button color="m" label="Discover METER" tabindex="0" class="{{ page_section.meter_teaser.call_to_action.background_color }}" role="presentation">
+                        <!---->
+                        <a scoressr="href;target;label,innerText" tabindex="-1" href="{{page_section.meter_teaser.call_to_action.url}}" target="">
+                            {{ page_section.meter_teaser.call_to_action.title }}
+                        </a>
+                        <!---->
+                    </meter-button>
+                {% endif %}
+            </div>
+        {% endif %}
+        
+        {% if page_section.meter_teaser.heroImageMobile and  page_section.meter_teaser.heroImage and page_section.meter_teaser.type == 'CJ'%}
+            <score-image alt="" aspect="0.56" class="score-media-element Hu" copyright="" description="" end="1" ew="Hh" ga="20" gb="20">
+                <picture class="img-section--img">
+
+                    <source media="(max-width: 599px)" srcset="{{ page_section.meter_teaser.heroImageMobile }}" type="image/jpeg">
+
+                    <source media="(min-width: 600px)" srcset="{{ page_section.meter_teaser.heroImage }}" type="image/jpeg">
+
+                    <img src="{{ page_section.meter_teaser.heroImage }}" alt="Alt" loading="lazy">
+
+                </picture>
+
+            </score-image>
+        {% endif %}
+
+        {% if page_section.meter_teaser.heroImageMobile and page_section.meter_teaser.type == 'CI' %}
+            <score-image alt="" aspect="0.56" class="score-media-element Hu" copyright="" description="" end="1" ew="Hh" ga="20" gb="20">
+                <picture class="img-section--img">
+
+                    <source media="(max-width: 599px)" srcset="{{ page_section.meter_teaser.heroImageMobile }}" type="image/jpeg">
+
+                    <source media="(min-width: 600px)" srcset="{{ page_section.meter_teaser.heroImageMobile }}" type="image/jpeg">
+
+                    <img src="{{ page_section.meter_teaser.heroImage }}" alt="Alt" loading="lazy">
+
+                </picture>
+
+            </score-image>
+        {% endif %}
+
+
+          {% if page_section.meter_teaser.heroImageMobile and page_section.meter_teaser.type == 'CH' %}
+            <score-image alt="" aspect="0.56" class="score-media-element Hu" copyright="" description="" end="1" ew="Hh" ga="20" gb="20">
+                <picture class="img-section--img">
+
+                    <source media="(max-width: 599px)" srcset="{{ page_section.meter_teaser.heroImageMobile }}" type="image/jpeg">
+
+                    <source media="(min-width: 600px)" srcset="{{ page_section.meter_teaser.heroImageMobile }}" type="image/jpeg">
+
+                    <img src="{{ page_section.meter_teaser.heroImage }}" alt="Alt" loading="lazy">
+
+                </picture>
+
+            </score-image>
+        {% endif %}
+
+    </meter-teaser>
+</section>
