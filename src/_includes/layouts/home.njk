@@ -17,7 +17,7 @@
 {% endif %}
 
 {% block content %}
-  <div id="main-content" tabindex="-1">
+ {#  <div id="main-content" tabindex="-1"> #}
  {#    {% include "partials/components/intro.njk" %}
     {% include "partials/components/post-list.njk" %} #}
     {% include "partials/components/pagination.njk" %}
@@ -29,5 +29,5 @@
       {% include "partials/components/"+page_section.template+".njk" %} 
     {% endif %} 
   {% endfor %}
-    </div>
+   {#  </div> #}
 {% endblock %}

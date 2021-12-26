@@ -3,7 +3,7 @@
 // Pull in the stalfos lib
 @import '../../node_modules/stalfos/stalfos.scss';
 // Local mixins
-@import 'mixins/dark-mode';
+//@import 'mixins/dark-mode';
 // @import 'theme';
 @import 'ui';
 // Local dependencies
@@ -29,6 +29,12 @@ main {
     &:focus {
         outline: none;
     }
+}
+
+a:not([class]) {
+    text-decoration: none !important;
+    text-decoration-skip-ink: auto;
+    cursor: pointer;
 }
 
 hr {

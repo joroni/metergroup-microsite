@@ -1,6 +1,7 @@
 {% if navigation.items %}
   <nav class="nav js-nav" aria-label="{{ariaLabel}}" id="nav-main">
-    <ul class="main-nav [ nav__list ] [ box-flex align-center md:space-before ]">
+    {# <ul class="main-nav [ nav__list ] [ box-flex align-center md:space-before ]"> #}
+    <ul class="main-nav">
       {% for item in navigation.items %}
         {% set relAttribute = '' %}
         {% set currentAttribute = '' %}
@@ -13,8 +14,19 @@
           {% set currentAttribute = ' aria-current="page"' %}
         {% endif %}
 
-        <li class="nav__item">
-          <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+        <li>
+         <meter-nav-section label="{{ item.title }}" section="navsection-0" tabindex="0" es="0" role="presentation" class="">
+                               
+                              {#   <a tabindex="-1"  id="Btn-{{ entry.key }}"  data-key="{{ entry.key }}" href="/meter-{{ entry.brandname | slugify }}/{{ entry.type }}/{{ entry.slug | slugify }}/" class="{% if entry.title | slugify == 'food' %}f{% elif entry.title | slugify == 'environment' %}e{% elif entry.title | slugify == 'horticulture' %}h{% elif entry.title | slugify == 'company' %}m{% endif %}">
+                                  {{ entry.title }}
+                         
+                                </a>
+                                <s></s> #}
+                    
+          <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}  </a>
+                                <s></s>
+                    
+                              </meter-nav-section>
         </li>
       {% endfor %}
     </ul>
