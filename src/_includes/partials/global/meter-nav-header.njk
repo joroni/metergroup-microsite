@@ -5,8 +5,8 @@
 
   {# <meter-nav-header class="Iv" end="1" iv="51" ln="500" lz="1024" role="presentation" start="0" style="transform: translateY(0px)" tabindex="-1">
      #}<header>
-        {% set navPages = collections.all | eleventyNavigation %}
-        {% if navPages %}
+       {#  {% set navPages = collections.all | eleventyNavigation %}
+        {% if navPages %} #}
           <meter-nav-main role="presentation" src="FT" tabindex="-1">
             <button aria-controls="nav-main" aria-expanded="false" aria-label="Toggle Mainmenu" class="toggle">
               <s></s>
@@ -65,20 +65,22 @@
               <s role="presentation" style="transform-origin: 100% 0"></s>
               <!---->
             </meter-autocomplete>
-            <nav id="nav-main">
+  {% set ariaLabel = 'navigation' %} {% include "partials/components/nav.njk" %}
+
+           <!-- <nav id="nav-main">
               
                           <ul class="main-nav">
                           {% for entry in navPages %}
                           
                             <li class="main-nav-item">
                               <meter-nav-section color="{{ entry.brandname }}" description="{{ entry.title }}" href="/meter-{{ entry.brandname | slugify }}/{{ entry.type }}/{{ entry.slug | slugify }}/" label="{{ entry.title }}" section="navsection-0" tabindex="0" es="0" role="presentation" class="">
-                                <!---->
+                               
                                 <a tabindex="-1"  id="Btn-{{ entry.key }}"  data-key="{{ entry.key }}" href="/meter-{{ entry.brandname | slugify }}/{{ entry.type }}/{{ entry.slug | slugify }}/" class="{% if entry.title | slugify == 'food' %}f{% elif entry.title | slugify == 'environment' %}e{% elif entry.title | slugify == 'horticulture' %}h{% elif entry.title | slugify == 'company' %}m{% endif %}">
-                                  <!---->{{ entry.title }}
-                                  <!---->
+                                  {{ entry.title }}
+                         
                                 </a>
                                 <s></s>
-                                <!---->
+                    
                               </meter-nav-section>
                                   {%- if entry.children.length -%}
                                     <div class="{{ entry.title | slugify }} navsection" id="navsection-0">
@@ -112,7 +114,7 @@
                                       </ul>
                                       <ul class="right">
                                         <score-image alt="" aria-label="" copyright="" description="" lg="https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/desktop_original_1x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 1x, https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/desktop_original_2x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 2x;1, 1" md="https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/tablet_original_1x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 1x, https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/tablet_original_2x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 2x;1, 1" role="presentation" sm="https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/tablet_original_1x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 1x, https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/tablet_original_2x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 2x;1, 1" xl="https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/desktop_original_1x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 1x, https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/desktop_original_2x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 2x;1, 1" xs="https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/mobile_original_1x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 1x, https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/mobile_original_2x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 2x;1, 1" class="score-media-element" tabindex="0" start="0" end="1" ew="Hh" aspect="1" mv="0.2" srcset="https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/desktop_original_1x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 1x, https://meter.sfo2.cdn.digitaloceanspaces.com/public/styles/desktop_original_2x/public/media/meter-food/product/water-activity-meter/aqualab-3-water-activity-moisture-analyzer-product.jpg 2x" gb="20" ga="20">
-                                          <!---->
+                                        
                                           <div class="media-container GX Eg" style="">
                                             <figure class="media-figure aspect" style="padding-top: 100%">
                                               <img loading="lazy" class="IA" sizes="100vw" draggable="false" src=" " srcset="
@@ -125,7 +127,7 @@
                                                 "></i>
                                             </figure>
                                           </div>
-                                          <!---->
+                                          
                                         </score-image>
                                       </ul>
                                     </div>
@@ -138,7 +140,7 @@
 
 
               
-            </nav>
+            </nav>-->
           </meter-nav-main>
           <meter-nav-sub role="navigation">
             <!---->
@@ -160,7 +162,7 @@
             <!---->
             <!---->
           </meter-nav-sub>
-        {% endif %}
+      {#   {% endif %} #}
         </header>
  {#  </meter-nav-header> #}
      

@@ -3433,6 +3433,10 @@ meter-nav-section.Hu {
     }
 }
 
+.nav__item {
+    margin-left: 1.25rem;
+}
+
 main {
     flex-direction: column;
     padding-top: 50px;
@@ -9751,6 +9755,13 @@ frameset {
     background: #fff;
     -ms-scroll-chaining: none;
     overscroll-behavior: contain;
+}
+
+@media only screen and (max-width:599px) {
+    main {
+        padding-top: 90px;
+        width: calc(100% - 30px);
+    }
 }
 
 @media only screen and (min-width:1025px) {

@@ -40,7 +40,7 @@
             <!---->
         </score-scrollbar>
            <meter-nav-header class="Iv" end="1" iv="51" ln="500" lz="1024" role="presentation" start="0" style="transform: translateY(0px)" tabindex="-1">
-        {% include "partials/global/meter-head.njk" %}
+        {% include "partials/global/meter-nav-header.njk" %}
         </meter-nav-header>
              <score-stage role="presentation">
           <meter-view class="in Aa GX" role="presentation">
@@ -54,6 +54,8 @@
   {% endblock %}
   </score-app>
   <script type="module" src="/js/components/theme-toggle.js" async defer></script>
+  <script type="text/javascript" src="/js/components/meter-nav-header.js" async defer></script>
+  {# <script type="text/javascript" src="/js/main.js" async defer></script> #}
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
