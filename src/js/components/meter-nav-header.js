@@ -18,7 +18,6 @@
             this.navToggle.setAttribute('aria-expanded', String(this.isOpen));
         },
     };
-
     hamburger.initialize();
 
 }());
